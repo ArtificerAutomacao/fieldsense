@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FieldSense Instruments — IoT e Sensoriamento para Máquinas e Implementos</title>
+  <meta name="description" content="FieldSense Instruments: soluções de Internet das Coisas (IoT), telemetria e sensoriamento para automação rural em máquinas e implementos.">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b0f14;--fg:#0e1726;--card:#0f172a;--pri:#0ea5a6;--pri-700:#0f766e;--text:#e5e7eb;--muted:#9ca3af;--line:#1f2937}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:'Inter',system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:#0b0f14;color:var(--text)}
+    a{color:var(--pri);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:42px;height:42px}
+    nav a{margin:0 10px;color:var(--muted);font-weight:600}
+    nav a:hover{color:#fff}
+    .cta{display:inline-block;background:linear-gradient(135deg,var(--pri),var(--pri-700));color:#001015;padding:12px 20px;border-radius:12px;font-weight:700}
+    .cta:hover{filter:brightness(1.05)}
+    .hero{display:grid;grid-template-columns:1.1fr 0.9fr;gap:28px;align-items:center;padding:46px 0;border-top:1px solid var(--line)}
+    .h-title{font-size:clamp(32px,4.2vw,54px);line-height:1.05;margin:0 0 12px}
+    .h-sub{font-size:clamp(16px,2vw,20px);color:var(--muted);margin:0 0 22px}
+    .hero-card{background:radial-gradient(1200px 600px at -15% -10%, #0ea5a60e 0, transparent 60%), #0c121a;border:1px solid #122033;border-radius:18px;padding:22px}
+    .grid{display:grid;gap:18px}
+    .features{grid-template-columns:repeat(3,minmax(0,1fr));margin:22px 0}
+    .card{background:linear-gradient(180deg,#0e141e,#0a1118);border:1px solid #162234;border-radius:16px;padding:18px}
+    .card h3{margin:0 0 6px;font-size:18px}
+    .muted{color:var(--muted)}
+    .section{padding:40px 0;border-top:1px solid var(--line)}
+    .kpis{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .kpi{background:#0b131d;border:1px solid #162234;border-radius:14px;padding:16px;text-align:center}
+    .kpi b{font-size:26px}
+    .products{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .product{background:#0c121a;border:1px solid #142233;border-radius:16px;padding:18px}
+    .product h4{margin:0 0 8px}
+    .badge{display:inline-block;background:#082b2b;color:#8ef2ef;padding:4px 10px;border-radius:999px;font-size:12px;margin-bottom:8px}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    form{display:grid;gap:12px}
+    input,textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid #1b2a3b;background:#0a1117;color:#dbe1ea}
+    textarea{min-height:120px}
+    .note{font-size:12px;color:var(--muted)}
+    footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted)}
+    /* Responsivo */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .features,.kpis,.products,.contact{grid-template-columns:1fr}
+      nav{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <!-- SVG logo minimalista: folha+trilhas -->
+        <svg class="logo" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#22d3ee"/>
+              <stop offset="1" stop-color="#0ea5a6"/>
+            </linearGradient>
+          </defs>
+          <rect x="2.5" y="2.5" width="59" height="59" rx="12" stroke="#12324a" fill="#0b1017"/>
+          <path d="M20 44c10-2 18-9 24-22" stroke="url(#g)" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M43 18c-5 2-9 6-12 11" stroke="#66e0e0" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="24" cy="40" r="2.3" fill="#8ef2ef"/>
+          <circle cx="32" cy="34" r="2" fill="#8ef2ef"/>
+          <circle cx="38" cy="28" r="1.8" fill="#8ef2ef"/>
+        </svg>
+        <div>
+          <strong style="font-size:18px;letter-spacing:0.3px">FieldSense Instruments</strong><br>
+          <span class="muted" style="font-size:12px">IoT • Telemetria • Sensoriamento agrícola</span>
+        </div>
+      </div>
+      <nav>
+        <a href="#solucoes">Soluções</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#tecnologia">Tecnologia</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a class="cta" href="#contato">Solicitar proposta</a>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1 class="h-title">Inteligência de campo para <span style="color:#8ef2ef">máquinas e implementos</span></h1>
+        <p class="h-sub">Soluções de Internet das Coisas (IoT) para sensoriamento, telemetria e automação rural. Colete, transmita e analise dados com precisão — do solo à nuvem.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="cta" href="#solucoes">Ver soluções</a>
+          <a href="#contato" class="muted" style="padding:12px 2px;font-weight:600">Falar com especialista →</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="grid features">
+          <div class="card">
+            <h3>Telemetria em tempo real</h3>
+            <p class="muted">Velocidade, torque, vibração, consumo, leitura de sensores e status do implemento.</p>
+          </div>
+          <div class="card">
+            <h3>Conectividade híbrida</h3>
+            <p class="muted">Wi‑Fi, 4G/5G, LoRa e CAN — integração com gateways e nuvem.</p>
+          </div>
+          <div class="card">
+            <h3>Robustez e precisão</h3>
+            <p class="muted">Hardware industrial e algoritmos de filtragem para ambientes severos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="solucoes" class="section">
+      <h2 style="margin:0 0 12px">Soluções</h2>
+      <p class="muted" style="margin:0 0 18px">Do sensor ao painel: instrumentação, firmware, gateways, dashboards e APIs.</p>
+      <div class="grid kpis">
+        <div class="kpi"><div class="muted">Instalação</div><b>Plug‑and‑play</b></div>
+        <div class="kpi"><div class="muted">Precisão</div><b>±0,1%</b></div>
+        <div class="kpi"><div class="muted">Cobertura</div><b>1–20 km</b></div>
+        <div class="kpi"><div class="muted">Dashboards</div><b>Web & Mobile</b></div>
+      </div>
+    </section>
+
+    <section id="produtos" class="section">
+      <h2 style="margin:0 0 12px">Produtos</h2>
+      <div class="grid products">
+        <div class="product">
+          <span class="badge">Sensoriamento</span>
+          <h4>Módulos de Entrada/SAÍDA</h4>
+          <p class="muted">Aquisição analógica e digital, filtros, proteção e telemetria para máquinas e implementos.</p>
+        </div>
+        <div class="product">
+          <span class="badge">Conectividade</span>
+          <h4>Gateways IoT</h4>
+          <p class="muted">Coleta local, buffers, comunicação segura e sincronização com nuvem.</p>
+        </div>
+        <div class="product">
+          <span class="badge">Software</span>
+          <h4>APIs e Dashboards</h4>
+          <p class="muted">Visualização, alertas, integração com ERPs e exportação de relatórios.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tecnologia" class="section">
+      <h2 style="margin:0 0 12px">Tecnologia</h2>
+      <div class="grid" style="grid-template-columns:1.2fr 0.8fr;gap:18px">
+        <div class="card">
+          <h3>Padrões abertos, segurança e desempenho</h3>
+          <p class="muted">Protocolos: MQTT/HTTPS, CAN, LoRa. Criptografia TLS, atualização remota (OTA), logs e telemetria confiáveis. Arquitetura pensada para baixa latência, alta disponibilidade e operação offline com posterior sincronização.</p>
+        </div>
+        <div class="card">
+          <h3>Integrações</h3>
+          <p class="muted">APIs REST, WebSocket, brokers MQTT e serviços de nuvem. Exportação em JSON/CSV e webhooks.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <h2 style="margin:0 0 12px">Contato</h2>
+      <div class="contact">
+        <form action="mailto:contato@fieldsense.com.br" method="post" enctype="text/plain">
+          <input type="text" name="nome" placeholder="Seu nome" required>
+          <input type="email" name="email" placeholder="Seu e‑mail" required>
+          <textarea name="mensagem" placeholder="Como podemos ajudar?" required></textarea>
+          <button class="cta" type="submit">Enviar mensagem</button>
+          <div class="note">Dica: para formulários mais robustos, use uma API (Contabo) ou serviços como Formspree/Netlify Forms.</div>
+        </form>
+        <div class="card">
+          <h3>Informações</h3>
+          <p class="muted">E‑mail: <a href="mailto:contato@fieldsense.com.br">contato@fieldsense.com.br</a><br>WhatsApp/Signal: +(55) 00 00000‑0000</p>
+          <p class="muted">Atendemos Brasil e exterior. Foco em agro, máquinas e implementos.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+        <div>© <span id="year"></span> FieldSense Instruments. Todos os direitos reservados.</div>
+        <div class="muted">Privacidade • Termos • <a href="#">LinkedIn</a></div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
